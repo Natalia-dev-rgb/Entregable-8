@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pre-entrega 8 | Carrito con localStorage</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="encabezado">
+    <h1>Mi Tienda</h1>
+    <p>Tu carrito se guarda solo: probá recargar la página con F5.</p>
+  </header>
+
+  <main class="contenedor">
+    <section class="seccion">
+      <h2>Productos</h2>
+      <div id="lista-productos" class="grilla"></div>
+    </section>
+
+    <section class="seccion">
+      <h2>Carrito</h2>
+      <p id="mensaje" class="mensaje" role="status" aria-live="polite"></p>
+      <div id="lista-carrito"></div>
+      <div class="resumen">
+        <p>Total: <strong id="total">$0,00</strong></p>
+        <button id="btn-vaciar" class="btn btn-peligro" type="button">Vaciar carrito</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

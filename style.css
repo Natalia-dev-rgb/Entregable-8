@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: #f4f1fa;
+  color: #2b2438;
+}
+
+.encabezado {
+  background: #5b3fa0;
+  color: #fff;
+  text-align: center;
+  padding: 24px 16px;
+}
+
+.encabezado h1 {
+  margin: 0 0 6px;
+}
+
+.encabezado p {
+  margin: 0;
+  opacity: 0.9;
+}
+
+.contenedor {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+  display: grid;
+  gap: 24px;
+}
+
+.seccion {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(43, 36, 56, 0.08);
+}
+
+.seccion h2 {
+  margin-top: 0;
+}
+
+/* Productos */
+.grilla {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.tarjeta {
+  border: 1px solid #e3dcf2;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+}
+
+.tarjeta h3 {
+  font-size: 1rem;
+  margin: 8px 0;
+}
+
+.emoji {
+  font-size: 2.4rem;
+}
+
+.precio {
+  font-weight: 700;
+  color: #5b3fa0;
+}
+
+/* Botones */
+.btn {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  background: #5b3fa0;
+  color: #fff;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #473181;
+}
+
+.btn:focus-visible {
+  outline: 3px solid #ffb703;
+  outline-offset: 2px;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-peligro {
+  background: #c0392b;
+}
+
+.btn-peligro:hover {
+  background: #992d22;
+}
+
+.btn-mini {
+  padding: 2px 10px;
+  font-size: 1.1rem;
+}
+
+/* Carrito */
+.item {
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee8f7;
+}
+
+.item-cantidad {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.item-subtotal {
+  font-weight: 700;
+  min-width: 110px;
+  text-align: right;
+}
+
+.vacio {
+  color: #7a7090;
+  text-align: center;
+  padding: 16px 0;
+}
+
+.resumen {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  font-size: 1.2rem;
+}
+
+.mensaje {
+  min-height: 1.5em;
+  margin: 0 0 8px;
+  padding: 0;
+  font-weight: 600;
+}
+
+.mensaje-ok {
+  color: #1e7a46;
+}
+
+.mensaje-aviso {
+  color: #b35c00;
+}
+
+@media (max-width: 600px) {
+  .item {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .item-subtotal {
+    text-align: left;
+  }
+}
